@@ -4,12 +4,17 @@ const itemsDiv = document.getElementById("items")
 const input = document.getElementById("itemInput")
 const storageKey = "items"
 
+input.onkeyup = function(e){
+    if(e.keyCode == 13){ addItem()
+        }
+    }
+
 function renderItems() {
     itemsDiv.innerHTML = null;
 
     for(const [idx, item] of Object.entries(items)) {
         const container = document.createElement("div")
-        container.style.marginBottom = "10px"
+        container.style.margin = "10px"
 
         const text = document.createElement("p")
         text.textContent = item;
