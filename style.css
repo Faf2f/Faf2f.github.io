@@ -9,7 +9,8 @@ h1, h2{text-align: center;}
 
 #input{
     display: flex; 
-    position: fixed; width: 10%; top: 40%; left:45%;
+    position:static; width: 10%; top: 40%; left:45%;
+    justify-self: center;
     justify-content: center;
 }
 
