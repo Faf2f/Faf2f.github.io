@@ -47,7 +47,6 @@ function saveItems() {
 function addItem() {
     const value = input.value;
     if (!value) {
-        alert("You cannot add an empty item")
         return
     }
     else {
