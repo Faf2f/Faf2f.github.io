@@ -45,10 +45,12 @@ function addItem() {
         alert("You cannot add an empty item")
         return
     }
+    else {
     items.push(value)
     renderItems()
     input.value = ""
     saveItems()
+    }
 }
 
 function removeItem(idx) {
